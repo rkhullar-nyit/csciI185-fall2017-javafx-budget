@@ -39,4 +39,4 @@ Do not submit anything on Blackboard for this project. Instead ensure your code 
 
 This project will be graded out of 20 points. If all the test cases pass you may receive all 20 points. Each failing test may result in upt to 5 points being deducted. Code that does not compile will not be graded.
 
-[github-link]: https://classroom.github.com/
+[github-link]: https://classroom.github.com/a/eXJrtvTR
