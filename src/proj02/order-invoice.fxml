@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar id="menubar">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem id="menu_open" mnemonicParsing="false" text="Open">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem id="menu_save" mnemonicParsing="false" text="Save">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              <MenuItem id="menu_close" mnemonicParsing="false" text="Close">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView id="table" editable="true" prefHeight="350.0" prefWidth="200.0">
+        <columns>
+          <TableColumn id="name_column" prefWidth="200.0" text="Item Name" />
+          <TableColumn id="quantity_column" prefWidth="75.0" style="-fx-alignment: CENTER-RIGHT;" text="Quantity" />
+            <TableColumn id="unit_pirce_column" prefWidth="75.0" style="-fx-alignment: CENTER-RIGHT;" text="Unit Price" />
+            <TableColumn id="subtotal_column" editable="false" prefWidth="100.0" style="-fx-alignment: CENTER-RIGHT;" text="Subtotal" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <TextField id="add_item" promptText="Item Name" />
+            <TextField id="add_quantity" promptText="Quantity" />
+            <TextField id="add_unit_price" promptText="Unit Price" />
+            <Button id="add" minWidth="-Infinity" mnemonicParsing="false" text="Add" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <BorderPane>
+         <right>
+            <Label contentDisplay="RIGHT" text="Total:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <Text id="total" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" textAlignment="RIGHT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </graphic>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+         </right>
+      </BorderPane>
+   </children>
+</VBox>
