@@ -28,8 +28,8 @@ milk,3,2.500000
 
 ### Example Print Out
 ```
-"ItemOrder {name: apple, quantity: 2, unitPrice: 1.50}"
-"ItemOrder {name: milk, quantity: 3, unitPrice: 2.50}"
+ItemOrder {name: apple, quantity: 2, unitPrice: 1.50}
+ItemOrder {name: milk, quantity: 3, unitPrice: 2.50}
 ```
 
 ### Submissions
